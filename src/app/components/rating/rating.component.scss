@@ -1,0 +1,57 @@
+.rating{
+  align-items: center;
+
+  .rating__movie{
+    overflow: hidden;
+    text-align: center;
+    background-color: #eaeaea;
+    padding: 10px;
+    box-shadow: 0 3px 15px rgba(150, 150, 150, 0.63);
+
+    .movie__img {
+      height: 350px;
+      display: block;
+
+      .img {
+        max-height: 100%;
+        height: auto;
+      }
+
+    }
+
+    .movie__title{
+      margin: 10px 0;
+      font-size: 20px;
+    }
+
+    .movie__director {
+
+      .director {
+        color: #a8a8a8;
+      }
+
+    }
+
+    .movie__rating{
+      margin-top: 10px;
+      color: #8d8d8d;
+    }
+  }
+
+  .rating__option{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+    .option__button{
+
+      & + .option__button{
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .movie__rating-table{
+    width: 100%;
+  }
+}

@@ -1,0 +1,8 @@
+<div class="movie">
+  <button mat-raised-button (click)="addMovie()" class="movie__button-add">Add movie</button>
+  <ul class="movie__previews">
+    <li *ngFor="let movie of movies" class="previews__item">
+      <app-movie-preview [movie]="movie"></app-movie-preview>
+    </li>
+  </ul>
+</div>

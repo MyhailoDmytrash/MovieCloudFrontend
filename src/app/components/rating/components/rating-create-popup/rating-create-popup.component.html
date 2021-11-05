@@ -1,0 +1,17 @@
+<div class="rating-create-popup">
+  <form [formGroup]="form" class="rating-create-popup__form">
+    <mat-form-field>
+      <mat-label>Reviewers</mat-label>
+      <mat-select formControlName="reviewerId">
+        <mat-option *ngFor="let reviewer of reviewers" value="{{reviewer.name}}">{{reviewer.name}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Stars</mat-label>
+      <input matInput formControlName="star" type="number">
+    </mat-form-field>
+
+    <button mat-raised-button [disabled]="form.invalid" (click)="submit()" type="button">Save</button>
+  </form>
+</div>

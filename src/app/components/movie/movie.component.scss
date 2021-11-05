@@ -1,0 +1,11 @@
+.movie{
+  width: 100%;
+
+  .movie__previews{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+}

@@ -1,0 +1,16 @@
+<div class="movie-preview">
+  <a [routerLink]="['/movie/' + movie.id]" class="movie-preview__img">
+    <img src="{{movie.imgURL}}" alt="poster" class="img">
+  </a>
+  <h3 class="movie-preview__title">
+    {{movie.title}}
+  </h3>
+  <div class="movie-preview__director">
+    <span class="director">Director:</span> {{movie.director}}
+  </div>
+  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item (click)="onUpdate()">Update</button>
+    <button mat-menu-item (click)="onRemove()">Remove</button>
+  </mat-menu>
+</div>

@@ -1,0 +1,10 @@
+<div class="reviewer-create-popup">
+  <form [formGroup]="form" class="reviewer-create-popup__form">
+    <mat-form-field>
+      <mat-label>Reviewer's name</mat-label>
+      <input matInput formControlName="name">
+    </mat-form-field>
+
+    <button mat-raised-button (click)="onSubmit()" class="form__button">Save</button>
+  </form>
+</div>

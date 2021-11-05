@@ -1,0 +1,29 @@
+.movie-preview{
+  overflow: hidden;
+  text-align: center;
+  background-color: #eaeaea;
+  padding: 10px;
+  box-shadow: 0 3px 15px rgba(150, 150, 150, 0.63);
+
+  .movie-preview__img{
+    height: 350px;
+    display: block;
+
+    .img{
+      max-height: 100%;
+      height: auto;
+    }
+  }
+
+  .movie-preview__title{
+    margin: 10px 0;
+    font-size: 20px;
+  }
+
+  .movie-preview__director{
+
+    .director{
+      color: #a8a8a8;
+    }
+  }
+}

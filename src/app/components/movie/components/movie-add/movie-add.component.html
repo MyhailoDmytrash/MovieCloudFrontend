@@ -1,0 +1,25 @@
+<div class="movie-add">
+  <form [formGroup]="form" class="movie-add__form">
+    <mat-form-field>
+      <mat-label>Movie's title</mat-label>
+      <input matInput formControlName="title">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Movie's poster url</mat-label>
+      <input matInput formControlName="imgURL">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Movie's year</mat-label>
+      <input matInput formControlName="year" type="number">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Movie's director</mat-label>
+      <input matInput formControlName="director">
+    </mat-form-field>
+
+    <button mat-raised-button [disabled]="form.invalid" (click)="onSubmit()" type="button" class="form__button">save</button>
+  </form>
+</div>
